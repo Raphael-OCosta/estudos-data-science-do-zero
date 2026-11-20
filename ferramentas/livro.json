@@ -1,0 +1,786 @@
+{
+ "titulo": "Data Science do Zero",
+ "subtitulo": "Primeiras regras com o Python",
+ "autor": "Joel Grus",
+ "repo": "estudos-data-science-do-zero",
+ "linguagem": "python",
+ "paginas": 442,
+ "preparacao": "import math, random, re\nfrom collections import Counter, defaultdict\nimport matplotlib.pyplot as plt\nrandom.seed(0)\nprint(\"Pronto. Aqui é tudo do zero: só Python puro (e matplotlib para gráficos).\")",
+ "capitulos": {
+  "1": {
+   "titulo": "Introdução",
+   "pag": 24,
+   "secoes": [
+    [
+     2,
+     "A Ascensão dos Dados",
+     25
+    ],
+    [
+     2,
+     "O Que É Data Science?",
+     26
+    ],
+    [
+     2,
+     "Motivação Hipotética: DataSciencester",
+     28
+    ]
+   ]
+  },
+  "2": {
+   "titulo": "Curso Relâmpago de Python",
+   "pag": 40,
+   "secoes": [
+    [
+     2,
+     "O Básico",
+     41
+    ],
+    [
+     2,
+     "Não Tão Básico",
+     55
+    ]
+   ]
+  },
+  "3": {
+   "titulo": "Visualizando Dados",
+   "pag": 66,
+   "secoes": [
+    [
+     2,
+     "matplotlib",
+     67
+    ],
+    [
+     2,
+     "Gráficos de Barra",
+     69
+    ],
+    [
+     2,
+     "Gráficos de Linhas",
+     74
+    ],
+    [
+     2,
+     "Gráficos de Dispersão",
+     76
+    ]
+   ]
+  },
+  "4": {
+   "titulo": "Álgebra Linear",
+   "pag": 81,
+   "secoes": [
+    [
+     2,
+     "Vetores",
+     82
+    ],
+    [
+     2,
+     "Matrizes",
+     87
+    ]
+   ]
+  },
+  "5": {
+   "titulo": "Estatística",
+   "pag": 91,
+   "secoes": [
+    [
+     2,
+     "Descrevendo um Conjunto Único de Dados",
+     92
+    ],
+    [
+     2,
+     "Correlação",
+     99
+    ],
+    [
+     2,
+     "Paradoxo de Simpson",
+     103
+    ],
+    [
+     2,
+     "Alguns Outros Pontos de Atenção sobre Correlação",
+     105
+    ],
+    [
+     2,
+     "Correlação e Causalidade",
+     106
+    ]
+   ]
+  },
+  "6": {
+   "titulo": "Probabilidade",
+   "pag": 108,
+   "secoes": [
+    [
+     2,
+     "Dependência e Independência",
+     109
+    ],
+    [
+     2,
+     "Probabilidade Condicional",
+     110
+    ],
+    [
+     2,
+     "Teorema de Bayes",
+     112
+    ],
+    [
+     2,
+     "Variáveis Aleatórias",
+     114
+    ],
+    [
+     2,
+     "Distribuições Contínuas",
+     115
+    ],
+    [
+     2,
+     "A Distribuição Normal",
+     117
+    ],
+    [
+     2,
+     "O Teorema do Limite Central",
+     121
+    ]
+   ]
+  },
+  "7": {
+   "titulo": "Hipótese e Inferência",
+   "pag": 125,
+   "secoes": [
+    [
+     2,
+     "Teste Estatístico de Hipótese",
+     126
+    ],
+    [
+     2,
+     "Exemplo: Lançar Uma Moeda",
+     127
+    ],
+    [
+     2,
+     "p-values",
+     130
+    ],
+    [
+     2,
+     "Intervalos de Confiança",
+     132
+    ],
+    [
+     2,
+     "P-Hacking",
+     134
+    ],
+    [
+     2,
+     "Exemplo: Executando um Teste A/B",
+     135
+    ],
+    [
+     2,
+     "Inferência Bayesiana",
+     137
+    ]
+   ]
+  },
+  "8": {
+   "titulo": "Gradiente Descendente",
+   "pag": 142,
+   "secoes": [
+    [
+     2,
+     "A Ideia Por Trás do Gradiente Descendente",
+     143
+    ],
+    [
+     2,
+     "Estimando o Gradiente",
+     145
+    ],
+    [
+     2,
+     "Usando o Gradiente",
+     149
+    ],
+    [
+     2,
+     "Escolhendo o Tamanho do Próximo Passo",
+     150
+    ],
+    [
+     2,
+     "Juntando Tudo",
+     151
+    ],
+    [
+     2,
+     "Gradiente Descendente Estocástico",
+     153
+    ]
+   ]
+  },
+  "9": {
+   "titulo": "Obtendo Dados",
+   "pag": 156,
+   "secoes": [
+    [
+     2,
+     "stdin e stdout",
+     157
+    ],
+    [
+     2,
+     "Lendo Arquivos",
+     160
+    ],
+    [
+     2,
+     "Extraindo Dados da Internet",
+     164
+    ],
+    [
+     2,
+     "Usando APIs",
+     171
+    ],
+    [
+     2,
+     "Exemplo: Usando as APIs do Twitter",
+     174
+    ]
+   ]
+  },
+  "10": {
+   "titulo": "Trabalhando com Dados",
+   "pag": 179,
+   "secoes": [
+    [
+     2,
+     "Explorando Seus Dados",
+     180
+    ],
+    [
+     2,
+     "Limpando e Transformando",
+     186
+    ],
+    [
+     2,
+     "Manipulando Dados",
+     189
+    ],
+    [
+     2,
+     "Redimensionando",
+     193
+    ],
+    [
+     2,
+     "Redução da Dimensionalidade",
+     195
+    ]
+   ]
+  },
+  "11": {
+   "titulo": "Aprendizado de Máquina",
+   "pag": 203,
+   "secoes": [
+    [
+     2,
+     "Modelagem",
+     204
+    ],
+    [
+     2,
+     "O Que É Aprendizado de Máquina?",
+     205
+    ],
+    [
+     2,
+     "Sobreajuste e Sub-Ajuste",
+     207
+    ],
+    [
+     2,
+     "Precisão",
+     210
+    ],
+    [
+     2,
+     "Compromisso entre Polarização e Variância",
+     213
+    ],
+    [
+     2,
+     "Recursos Extração e Seleção de Característica",
+     215
+    ]
+   ]
+  },
+  "12": {
+   "titulo": "K-Vizinhos Mais Próximos",
+   "pag": 218,
+   "secoes": [
+    [
+     2,
+     "O Modelo",
+     219
+    ],
+    [
+     2,
+     "Exemplo: Linguagens Favoritas",
+     222
+    ],
+    [
+     2,
+     "A Maldição da Dimensionalidade",
+     226
+    ]
+   ]
+  },
+  "13": {
+   "titulo": "Naive Bayes",
+   "pag": 234,
+   "secoes": [
+    [
+     2,
+     "Um Filtro de Spam Muito Estúpido",
+     235
+    ],
+    [
+     2,
+     "Um Filtro de Spam Mais Sofisticado",
+     236
+    ],
+    [
+     2,
+     "Implementação",
+     239
+    ],
+    [
+     2,
+     "Testando Nosso Modelo",
+     241
+    ]
+   ]
+  },
+  "14": {
+   "titulo": "Regressão Linear Simples",
+   "pag": 245,
+   "secoes": [
+    [
+     2,
+     "O Modelo",
+     246
+    ],
+    [
+     2,
+     "Usando o Gradiente Descendente",
+     250
+    ],
+    [
+     2,
+     "Estimativa Máxima da Probabilidade",
+     251
+    ]
+   ]
+  },
+  "15": {
+   "titulo": "Regressão Múltipla",
+   "pag": 253,
+   "secoes": [
+    [
+     2,
+     "O Modelo",
+     254
+    ],
+    [
+     2,
+     "Mais Suposições do Modelo dos Mínimos Quadrados",
+     255
+    ],
+    [
+     2,
+     "Ajustando o Modelo",
+     257
+    ],
+    [
+     2,
+     "Interpretando o Modelo",
+     258
+    ],
+    [
+     2,
+     "O Benefício do Ajuste",
+     259
+    ],
+    [
+     2,
+     "Digressão: A Inicialização",
+     260
+    ],
+    [
+     2,
+     "Erros Padrões de Coeficientes de Regressão",
+     262
+    ],
+    [
+     2,
+     "Regularização",
+     264
+    ]
+   ]
+  },
+  "16": {
+   "titulo": "Regressão Logística",
+   "pag": 268,
+   "secoes": [
+    [
+     2,
+     "O Problema",
+     269
+    ],
+    [
+     2,
+     "A Função Logística",
+     273
+    ],
+    [
+     2,
+     "Aplicando o Modelo",
+     276
+    ],
+    [
+     2,
+     "O Benefício do Ajuste",
+     278
+    ],
+    [
+     2,
+     "Máquina de Vetor de Suporte",
+     280
+    ]
+   ]
+  },
+  "17": {
+   "titulo": "Árvores de Decisão",
+   "pag": 285,
+   "secoes": [
+    [
+     2,
+     "O Que É uma Árvore de Decisão?",
+     286
+    ],
+    [
+     2,
+     "Entropia",
+     289
+    ],
+    [
+     2,
+     "A Entropia de uma Partição",
+     292
+    ],
+    [
+     2,
+     "Criando uma Árvore de Decisão",
+     294
+    ],
+    [
+     2,
+     "Juntando Tudo",
+     298
+    ],
+    [
+     2,
+     "Florestas Aleatórias",
+     301
+    ]
+   ]
+  },
+  "18": {
+   "titulo": "Redes Neurais",
+   "pag": 304,
+   "secoes": [
+    [
+     2,
+     "Perceptrons",
+     305
+    ],
+    [
+     2,
+     "Redes Neurais Feed-Forward",
+     308
+    ],
+    [
+     2,
+     "Backpropagation",
+     312
+    ],
+    [
+     2,
+     "Exemplo: Derrotando um CAPTCHA",
+     314
+    ]
+   ]
+  },
+  "19": {
+   "titulo": "Agrupamento",
+   "pag": 320,
+   "secoes": [
+    [
+     2,
+     "A Ideia",
+     321
+    ],
+    [
+     2,
+     "O Modelo",
+     322
+    ],
+    [
+     2,
+     "Exemplo: Encontros",
+     324
+    ],
+    [
+     2,
+     "Escolhendo k",
+     328
+    ],
+    [
+     2,
+     "Exemplo: Agrupando Cores",
+     330
+    ],
+    [
+     2,
+     "Agrupamento Hierárquico Bottom-up",
+     332
+    ]
+   ]
+  },
+  "20": {
+   "titulo": "Processamento de Linguagem Natural",
+   "pag": 339,
+   "secoes": [
+    [
+     2,
+     "Nuvens de Palavras",
+     340
+    ],
+    [
+     2,
+     "Modelos n-gramas",
+     343
+    ],
+    [
+     2,
+     "Gramáticas",
+     347
+    ],
+    [
+     2,
+     "Um Adendo: Amostragem de Gibbs",
+     350
+    ],
+    [
+     2,
+     "Modelagem de Tópicos",
+     352
+    ]
+   ]
+  },
+  "21": {
+   "titulo": "Análise de Rede",
+   "pag": 360,
+   "secoes": [
+    [
+     2,
+     "Centralidade de Intermediação",
+     361
+    ],
+    [
+     2,
+     "Centralidade de Vetor Próprio",
+     367
+    ],
+    [
+     2,
+     "Gráficos Direcionados e PageRank",
+     372
+    ]
+   ]
+  },
+  "22": {
+   "titulo": "Sistemas Recomendadores",
+   "pag": 376,
+   "secoes": [
+    [
+     2,
+     "Curadoria Manual",
+     378
+    ],
+    [
+     2,
+     "Recomendando O Que é Popular",
+     379
+    ],
+    [
+     2,
+     "Filtragem Colaborativa Baseada no Usuário",
+     381
+    ],
+    [
+     2,
+     "Filtragem Colaborativa Baseada em Itens",
+     385
+    ]
+   ]
+  },
+  "23": {
+   "titulo": "Bases de Dados e SQL",
+   "pag": 389,
+   "secoes": [
+    [
+     2,
+     "CREATE TABLE e INSERT",
+     390
+    ],
+    [
+     2,
+     "UPDATE",
+     392
+    ],
+    [
+     2,
+     "DELETE",
+     393
+    ],
+    [
+     2,
+     "SELECT",
+     394
+    ],
+    [
+     2,
+     "GROUP BY",
+     396
+    ],
+    [
+     2,
+     "ORDER BY",
+     399
+    ],
+    [
+     2,
+     "JOIN",
+     400
+    ],
+    [
+     2,
+     "Subconsultas",
+     403
+    ],
+    [
+     2,
+     "Índices",
+     404
+    ],
+    [
+     2,
+     "Otimização de Consulta",
+     405
+    ],
+    [
+     2,
+     "NoSQL",
+     406
+    ]
+   ]
+  },
+  "24": {
+   "titulo": "MapReduce",
+   "pag": 408,
+   "secoes": [
+    [
+     2,
+     "Exemplo: Contagem de Palavras",
+     409
+    ],
+    [
+     2,
+     "Por que MapReduce?",
+     411
+    ],
+    [
+     2,
+     "MapReduce Mais Generalizado",
+     412
+    ],
+    [
+     2,
+     "Exemplo: Analisando Atualizações de Status",
+     413
+    ],
+    [
+     2,
+     "Exemplo: Multiplicação de Matriz",
+     415
+    ],
+    [
+     2,
+     "Um Adendo: Combinadores",
+     417
+    ]
+   ]
+  },
+  "25": {
+   "titulo": "Vá em Frente e Pratique Data Science",
+   "pag": 419,
+   "secoes": [
+    [
+     2,
+     "IPython",
+     420
+    ],
+    [
+     2,
+     "Matemática",
+     421
+    ],
+    [
+     2,
+     "Não Do Zero",
+     422
+    ],
+    [
+     2,
+     "Encontre Dados",
+     425
+    ],
+    [
+     2,
+     "Pratique Data Science",
+     426
+    ]
+   ]
+  }
+ }
+}

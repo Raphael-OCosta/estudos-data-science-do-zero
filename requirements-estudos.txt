@@ -1,0 +1,6 @@
+ipykernel
+pip
+numpy
+matplotlib
+nbclient
+nbformat
